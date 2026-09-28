@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- <link rel="stylesheet" href="./css/style.css">-->
+  <link rel="stylesheet" href="style-responsive.css">
+  <title>Frontend Mentor | Hotel booking confirmation page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz@1,9..144&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="container">
+    <!-- Sidebar starts -->
+    <aside id="sidebar">
+      <button type="button" class="icon" id="menuBtn" aria-label="Toggle menu">
+        <img src="./assets/images/hamburger icon menu.png" alt="Menu" class="menu-img">
+      </button>
+      <div id="sidebar-logo">
+        <img src="./assets/images/logo.svg" alt="Logo Maison">
+      </div>
+      <hr>
+
+      <!-- Guest navigation -->
+      <nav>
+        <ul>
+          <li>
+            <img src="./assets/images/icon-bed.svg" alt="Bed icon">
+            <a href="" class="active">Your stay</a>
+          </li>
+          <li>
+            <img src="./assets/images/icon-house.svg" alt="House icon">
+            <a href="">The house</a>
+          </li>
+          <li>
+            <img src="./assets/images/icon-pin.svg" alt="Pin icon">
+            <a href="">Around town</a>
+          </li>
+          <li>
+            <img src="./assets/images/icon-breakfast-outline.svg" alt="Breakfast icon">
+            <a href="">Breakfast</a>
+          </li>
+          <li>
+            <img src="./assets/images/icon-mail.svg" alt="Mail icon">
+            <a href="">Messages</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Local weather -->
+      <article class="weather-widget">
+
+        <!-- Заглавие/Град: Важно за семантиката -->
+        <h2 id="weather-location">Today in Cassis</h2>
+
+        <!-- Градусите: Голям и важен текст -->
+        <p id="weather-temp">27°</p>
+
+        <!-- Текстово описание: Може със span или p -->
+        <p id="weather-desc">Sunny · light breeze</p>
+
+        <!--<img src="./assets/images/icon-weather.svg" alt="sun icon">-->
+      </article>
+      <div id="sidebar-footer">
+
+        <p class="est-year">Est. 1987</p>
+
+        <address class="hotel-address">
+          Maison Soleil · 12 Rue des<br>
+          Oliviers · Cassis
+        </address>
+
+        <p class="copyright">
+          &copy; <small>2026</small> MAISON SOLEIL
+        </p>
+
+      </div>
+
+    </aside>
+
+    <!-- Sidebar ends -->
+
+    <!-- Main content starts -->
+    <main>
+      <p id="status-label">Booking · Confirmed</p>
+      <header id="booking-header">
+
+        <h1>Bienvenue, <span>Lucia.</span></h1>
+        <div id="booking-actions">
+          <button type="button">Print receipt</button>
+          <button type="button">Add to calendar</button>
+        </div>
+      </header>
+      <!-- Booking cards start -->
+
+      <!-- Receipt card -->
+      <div id="container-host">
+        <!--<div id="cards-preview-container">
+</div>-->
+        <article id="receipt-card">
+          <header>
+            <p>Receipt</p>
+
+            <p>№ MS-2026 <br>0421-AH</p>
+
+          </header>
+          <p id="under-header">Your stay</p>
+          <hr>
+          <div id="stay-dates">
+
+            <!-- Блок Check In -->
+            <div class="date-block">
+              <span class="date-label">Check In</span>
+              <time datetime="2026-04-25" class="date-value">25 Apr</time>
+              <span class="date-day">Saturday · 15:00</span>
+            </div>
+
+            <!-- Блок Check Out -->
+            <div class="date-block">
+              <span class="date-label">Check Out</span>
+              <time datetime="2026-04-29" class="date-value">29 Apr</time>
+              <span class="date-day">Wednesday · 11:00</span>
+            </div>
+
+          </div>
+          <hr>
+          <div id="container-receipt">
+            <div id="div1">Room · La Garrigue x 4 nights</div>
+            <div id="div2" class="price">€ 620.00</div>
+            <div id="div3">Breakfast x 2 guests</div>
+            <div id="div4">Tourist tax</div>
+            <div id="div5" class="price">€ 96.00</div>
+            <div id="div6" class="price">€ 14.40</div>
+          </div>
+          <!-- <dl class="receipt-details">
+              <div class="receipt-row">
+                <dt>Room · La Garrigue x 4 nights</dt>
+                <dd>€ 620.00</dd>
+              </div>
+              <div class="receipt-row">
+                <dt>Breakfast x 2 guests</dt>
+                <dd>€ 96.00</dd>
+              </div>
+              <div class="receipt-row">
+                <dt>Tourist tax</dt>
+                <dd>€ 14.40</dd>
+              </div>
+            </dl>-->
+          <div id="receipt-total">
+            <span>Total paid</span>
+            <strong>€ 730.40</strong>
+          </div>
+          <div id="receipt-footer">
+            <small>Paid · Wise · GBP</small>
+            <!-- Barcode image -->
+            <img src="./assets/images/icon-barcode.svg" alt="barcode">
+          </div>
+
+        </article>
+
+
+
+        <article id="host-card">
+          <!-- Note from host card -->
+          <div id="card-header">
+            <small id="card-tag">WELCOME CARD</small>
+            <img src="./assets/images/icon-sun.svg" alt="Sun">
+          </div>
+
+          <!-- Главно заглавие -->
+          <h2>A note from your host,</h2><span id="host-name">Margaux.</span>
+
+          <!-- Текстът на бележката -->
+          <p id="host-message">
+            We're so glad you're coming. The shutters will be open, the lemonade cold,
+            and the cat - Poivre - pretending not to notice you.
+          </p>
+
+          <!-- Note from host card -->
+          <div id="card-footer">
+            <span id="room-label">ROOM</span>
+            <h3>La Garrigue</h3>
+          </div>
+        </article>
+
+      </div>
+
+      <div id="hover-to-fan">
+
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org"
+          style="vertical-align: middle; margin-right: 6px;">
+          <path d="M12 2C12 7.5 16.5 12 22 12C16.5 12 12 16.5 12 22C12 16.5 7.5 12 2 12C7.5 12 12 7.5 12 2Z"
+            fill="#B24B35" />
+        </svg>
+
+        <span>Hover to fan</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org"
+          style="vertical-align: middle; margin-right: 6px;">
+          <path d="M12 2C12 7.5 16.5 12 22 12C16.5 12 12 16.5 12 22C12 16.5 7.5 12 2 12C7.5 12 12 7.5 12 2Z"
+            fill="#B24B35" />
+        </svg>
+
+      </div>
+      <!-- Guest info row starts -->
+      <section id="service-details" aria-label="Useful Information">
+
+        <article class="detail-card"><!-- Arrival -->
+          <header>
+            <img src="./assets/images/icon-key.svg" alt="Arrival icon">
+            <h2>Arrival</h2>
+            <span class="detail-number">01</span>
+          </header>
+          <p class="detail-arrival">Check-in from 15:00</p>
+          <small>Sat, 25 April</small>
+          <p class="detail-description">Ring the brass bell by the blue door. If we're at the market, the key is in the
+            terracotta pot by the olive tree.</p>
+        </article>
+        <article class="detail-card"> <!-- Wifi -->
+          <header>
+            <img src="./assets/images/icon-wifi.svg" alt="Wifi icon">
+            <h2>Wifi</h2>
+            <span class="detail-number">02</span>
+          </header>
+          <div id="network-pass">
+            <p class="detail-arrival">Le Soleil · Guest</p>
+            <small>Password below</small>
+            <div id="network-name"><span>NETWORK</span>
+              <p>Le Soleil · Guest</p></span>
+            </div>
+            <div id="pass">
+              <p>PASSWORD</p>
+              <p id="detail-password">soleil-2026</p>
+              <button type="button" id="copy-btn">Copy</button>
+            </div>
+
+          </div>
+
+        </article>
+        <article class="detail-card"><!-- Breakfast -->
+          <header>
+            <img src="./assets/images/icon-breakfast.svg" alt="Breakfast icon">
+            <h2>Breakfast</h2>
+            <span class="detail-number">03</span>
+          </header>
+          <p class="detail-arrival">Served 8 - 10:30</p>
+          <small>On the terrace</small>
+          <p class="detail-description">Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option?
+            Leave a note the night before.</p>
+        </article>
+
+      </section>
+      <!-- Guest info row ends -->
+
+      <!-- Booking cards end -->
+    </main>
+
+    <!-- Main content ends -->
+  </div><!-- container ends -->
+  <!--<footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by Мария Рангелова.
+  </footer>-->
+  <script src="custom.js" defer></script>
+
+</body>
+
+</html>
