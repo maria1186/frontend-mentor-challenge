@@ -24,7 +24,8 @@
   <div id="container">
     <!-- Sidebar starts -->
     <aside id="sidebar">
-      <button type="button" class="icon" id="menuBtn" aria-label="Toggle menu">
+      <button type="button" class="icon" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"
+        aria-controls="sidebar">
         <img src="./assets/images/hamburger icon menu.png" alt="Menu" class="menu-img">
       </button>
       <div id="sidebar-logo">
@@ -36,23 +37,23 @@
       <nav>
         <ul>
           <li>
-            <img src="./assets/images/icon-bed.svg" alt="Bed icon">
-            <a href="" class="active">Your stay</a>
+            <img src="./assets/images/icon-bed.svg" alt="">
+            <a href="" class="active" aria-current="page">Your stay</a>
           </li>
           <li>
-            <img src="./assets/images/icon-house.svg" alt="House icon">
+            <img src="./assets/images/icon-house.svg" alt="">
             <a href="">The house</a>
           </li>
           <li>
-            <img src="./assets/images/icon-pin.svg" alt="Pin icon">
+            <img src="./assets/images/icon-pin.svg" alt="">
             <a href="">Around town</a>
           </li>
           <li>
-            <img src="./assets/images/icon-breakfast-outline.svg" alt="Breakfast icon">
+            <img src="./assets/images/icon-breakfast-outline.svg" alt="">
             <a href="">Breakfast</a>
           </li>
           <li>
-            <img src="./assets/images/icon-mail.svg" alt="Mail icon">
+            <img src="./assets/images/icon-mail.svg" alt="">
             <a href="">Messages</a>
           </li>
         </ul>
@@ -62,7 +63,7 @@
       <article class="weather-widget">
 
         <!-- Заглавие/Град: Важно за семантиката -->
-        <h2 id="weather-location">Today in Cassis</h2>
+        <p id="weather-location">Today in Cassis</p>
 
         <!-- Градусите: Голям и важен текст -->
         <p id="weather-temp">27°</p>
@@ -143,20 +144,7 @@
             <div id="div5" class="price">€ 96.00</div>
             <div id="div6" class="price">€ 14.40</div>
           </div>
-          <!-- <dl class="receipt-details">
-              <div class="receipt-row">
-                <dt>Room · La Garrigue x 4 nights</dt>
-                <dd>€ 620.00</dd>
-              </div>
-              <div class="receipt-row">
-                <dt>Breakfast x 2 guests</dt>
-                <dd>€ 96.00</dd>
-              </div>
-              <div class="receipt-row">
-                <dt>Tourist tax</dt>
-                <dd>€ 14.40</dd>
-              </div>
-            </dl>-->
+
           <div id="receipt-total">
             <span>Total paid</span>
             <strong>€ 730.40</strong>
@@ -198,15 +186,13 @@
 
       <div id="hover-to-fan">
 
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org"
-          style="vertical-align: middle; margin-right: 6px;">
+        <svg class="decorative-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org">
           <path d="M12 2C12 7.5 16.5 12 22 12C16.5 12 12 16.5 12 22C12 16.5 7.5 12 2 12C7.5 12 12 7.5 12 2Z"
             fill="#B24B35" />
         </svg>
 
         <span>Hover to fan</span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org"
-          style="vertical-align: middle; margin-right: 6px;">
+        <svg class="decorative-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org">
           <path d="M12 2C12 7.5 16.5 12 22 12C16.5 12 12 16.5 12 22C12 16.5 7.5 12 2 12C7.5 12 12 7.5 12 2Z"
             fill="#B24B35" />
         </svg>
@@ -217,7 +203,7 @@
 
         <article class="detail-card"><!-- Arrival -->
           <header>
-            <img src="./assets/images/icon-key.svg" alt="Arrival icon">
+            <img src="./assets/images/icon-key.svg" alt="">
             <h2>Arrival</h2>
             <span class="detail-number">01</span>
           </header>
@@ -228,7 +214,7 @@
         </article>
         <article class="detail-card"> <!-- Wifi -->
           <header>
-            <img src="./assets/images/icon-wifi.svg" alt="Wifi icon">
+            <img src="./assets/images/icon-wifi.svg" alt="">
             <h2>Wifi</h2>
             <span class="detail-number">02</span>
           </header>
@@ -236,7 +222,7 @@
             <p class="detail-arrival">Le Soleil · Guest</p>
             <small>Password below</small>
             <div id="network-name"><span>NETWORK</span>
-              <p>Le Soleil · Guest</p></span>
+              <p>Le Soleil · Guest</p>
             </div>
             <div id="pass">
               <p>PASSWORD</p>
@@ -249,7 +235,7 @@
         </article>
         <article class="detail-card"><!-- Breakfast -->
           <header>
-            <img src="./assets/images/icon-breakfast.svg" alt="Breakfast icon">
+            <img src="./assets/images/icon-breakfast.svg" alt="">
             <h2>Breakfast</h2>
             <span class="detail-number">03</span>
           </header>
