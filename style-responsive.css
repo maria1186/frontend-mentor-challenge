@@ -423,6 +423,11 @@ time {
     }
 }
 
+.decorative-icon {
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
 #service-details {
     display: flex;
 
@@ -598,12 +603,10 @@ button:active {
         left: -260px;
         /* Стойността трябва да съвпада с ширината му, за да се скрие напълно */
         width: 260px;
-        /* Нагласете ширината според вашия дизайн */
         height: 100vh;
+        /*visibility: hidden;*/
         background-color: #fff;
-        /* Сложете вашия цвят на сайдбара */
         transition: left 0.3s ease;
-        /* Плавна анимация при отваряне */
         z-index: 1000;
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -611,12 +614,17 @@ button:active {
     /* 3. Когато JS добави този клас, сайдбарът се плъзга напред */
     #sidebar.open {
         left: 0;
+        visibility: visible;
     }
 
+    #sidebar nav {
+        visibility: hidden;
+        transition: visibility 0.3s ease;
+    }
 
-    /*aside {
-        display: none;
-    }*/
+    #sidebar.open nav {
+        visibility: visible;
+    }
 
     #container-host {
         gap: 2rem;
